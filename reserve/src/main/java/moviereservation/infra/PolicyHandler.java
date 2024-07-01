@@ -38,5 +38,21 @@ public class PolicyHandler {
         // Sample Logic //
         Reserve.updateStatus(event);
     }
+
+    @StreamListener(
+        value = KafkaProcessor.INPUT,
+        condition = "headers['type']=='TicketDecreased'"
+    )
+    public void wheneverTicketDecreased_UpdateStatus(
+        @Payload TicketDecreased ticketDecreased
+    ) {
+        TicketDecreased event = ticketDecreased;
+        System.out.println(
+            "\n\n##### listener UpdateStatus : " + ticketDecreased + "\n\n"
+        );
+
+        // Sample Logic //
+        Reserve.updateStatus(event);
+    }
 }
 //>>> Clean Arch / Inbound Adaptor
