@@ -59,8 +59,6 @@ public class Reserve {
         Reserve reserve = new Reserve();
         repository().save(reserve);
 
-        ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-        reserveCanceled.publishAfterCommit();
         */
 
         /** Example 2:  finding and process
@@ -70,36 +68,6 @@ public class Reserve {
             reserve // do something
             repository().save(reserve);
 
-            ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-            reserveCanceled.publishAfterCommit();
-
-         });
-        */
-
-    }
-
-    //>>> Clean Arch / Port Method
-    //<<< Clean Arch / Port Method
-    public static void updateStatus(TicketDecreased ticketDecreased) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Reserve reserve = new Reserve();
-        repository().save(reserve);
-
-        ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-        reserveCanceled.publishAfterCommit();
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(ticketDecreased.get???()).ifPresent(reserve->{
-            
-            reserve // do something
-            repository().save(reserve);
-
-            ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-            reserveCanceled.publishAfterCommit();
 
          });
         */
@@ -115,8 +83,6 @@ public class Reserve {
         Reserve reserve = new Reserve();
         repository().save(reserve);
 
-        ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-        reserveCanceled.publishAfterCommit();
         */
 
         /** Example 2:  finding and process
@@ -126,8 +92,6 @@ public class Reserve {
             reserve // do something
             repository().save(reserve);
 
-            ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-            reserveCanceled.publishAfterCommit();
 
          });
         */
@@ -143,8 +107,6 @@ public class Reserve {
         Reserve reserve = new Reserve();
         repository().save(reserve);
 
-        ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-        reserveCanceled.publishAfterCommit();
         */
 
         /** Example 2:  finding and process
@@ -154,8 +116,78 @@ public class Reserve {
             reserve // do something
             repository().save(reserve);
 
-            ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-            reserveCanceled.publishAfterCommit();
+
+         });
+        */
+
+    }
+
+    //>>> Clean Arch / Port Method
+    //<<< Clean Arch / Port Method
+    public static void updateStatus(TicketDecreased ticketDecreased) {
+        //implement business logic here:
+
+        /** Example 1:  new item 
+        Reserve reserve = new Reserve();
+        repository().save(reserve);
+
+        */
+
+        /** Example 2:  finding and process
+        
+        repository().findById(ticketDecreased.get???()).ifPresent(reserve->{
+            
+            reserve // do something
+            repository().save(reserve);
+
+
+         });
+        */
+
+    }
+
+    //>>> Clean Arch / Port Method
+    //<<< Clean Arch / Port Method
+    public static void updateStatus(TicketIncreased ticketIncreased) {
+        //implement business logic here:
+
+        /** Example 1:  new item 
+        Reserve reserve = new Reserve();
+        repository().save(reserve);
+
+        */
+
+        /** Example 2:  finding and process
+        
+        repository().findById(ticketIncreased.get???()).ifPresent(reserve->{
+            
+            reserve // do something
+            repository().save(reserve);
+
+
+         });
+        */
+
+    }
+
+    //>>> Clean Arch / Port Method
+    //<<< Clean Arch / Port Method
+    public static void updateStatus(TicketDecreased ticketDecreased) {
+        //implement business logic here:
+
+        /** Example 1:  new item 
+        Reserve reserve = new Reserve();
+        repository().save(reserve);
+
+        */
+
+        /** Example 2:  finding and process
+        
+        repository().findById(ticketDecreased.get???()).ifPresent(reserve->{
+            
+            reserve // do something
+            repository().save(reserve);
+
 
          });
         */
