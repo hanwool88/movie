@@ -58,26 +58,8 @@ public class Reserve {
             reserve.setReserveStatus("reserveCanceled");
             repository().save(reserve);
         });
-
     }
 
-
-    //<<< Clean Arch / Port Method
-    public static void updateStatus(TicketDecreased ticketDecreased) {
-        
-        repository().findById(ticketDecreased.get()).ifPresent(reserve->{
-            
-            
-            repository().save(reserve);
-
-            ReserveCanceled reserveCanceled = new ReserveCanceled(reserve);
-            reserveCanceled.publishAfterCommit();
-
-         });
-        
-
-    }
-    //>>> Clean Arch / Port Method
 
 }
 //>>> DDD / Aggregate Root
