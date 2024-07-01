@@ -78,7 +78,7 @@ public class Movie {
         
         repository().findById(reserveCanceled.getMovieId()).ifPresent(movie->{
             
-            if(movie.date.compareTo(reserveCanceled.getReserveDate()) >= 0) {
+            if(movie.getDate().compareTo(reserveCanceled.getDate()) >= 0) {
                 movie.setStock(movie.getStock() + reserveCanceled.getAmount());
                 repository().save(movie);
     

@@ -15,7 +15,7 @@ public class Reserved extends AbstractEvent {
     private String userId;
     private String reserveStatus;
     private Integer amount;
-    private Date reserveDate;
+    private String date;
     private Long movieId;
 
 }
