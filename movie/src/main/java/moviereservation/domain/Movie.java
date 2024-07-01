@@ -20,11 +20,11 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Date date;
-
     private Integer stock;
 
     private String movieName;
+
+    private String date;
 
     @PostPersist
     public void onPostPersist() {

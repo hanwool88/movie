@@ -19,8 +19,8 @@
             <String label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
             <String label="ReserveStatus" v-model="value.reserveStatus" :editMode="editMode" :inputUI="''"/>
             <Number label="Amount" v-model="value.amount" :editMode="editMode" :inputUI="''"/>
-            <Date label="ReserveDate" v-model="value.reserveDate" :editMode="editMode" :inputUI="''"/>
             <Number label="MovieId" v-model="value.movieId" :editMode="editMode" :inputUI="''"/>
+            <String label="Date" v-model="value.date" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>

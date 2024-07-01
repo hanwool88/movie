@@ -15,10 +15,10 @@
                 <Number label="Amount" v-model="item.amount" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Date label="ReserveDate" v-model="item.reserveDate" :editMode="editMode" @change="change" />
+                <Number label="MovieId" v-model="item.movieId" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Number label="MovieId" v-model="item.movieId" :editMode="editMode" @change="change" />
+                <String label="Date" v-model="item.date" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 
