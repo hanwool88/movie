@@ -70,8 +70,8 @@
                     { text: "userId", value: "userId" },
                     { text: "reserveStatus", value: "reserveStatus" },
                     { text: "amount", value: "amount" },
-                    { text: "reserveDate", value: "reserveDate" },
                     { text: "movieId", value: "movieId" },
+                    { text: "date", value: "date" },
                 ],
             reserve : [],
             newValue: {},
@@ -92,8 +92,8 @@
                 'userId': '',
                 'reserveStatus': '',
                 'amount': 0,
-                'reserveDate': '2024-07-01',
                 'movieId': 0,
+                'date': '',
             }
         },
         methods: {

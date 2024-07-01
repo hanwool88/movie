@@ -35,11 +35,11 @@ mvn spring-boot:run
 ## Test by API
 - reserve
 ```
- http :8088/reserves id="id" userId="userId" reserveStatus="reserveStatus" amount="amount" reserveDate="reserveDate" movieId="movieId" 
+ http :8088/reserves id="id" userId="userId" reserveStatus="reserveStatus" amount="amount" movieId="movieId" date="date" 
 ```
 - movie
 ```
- http :8088/movies id="id" date="date" stock="stock" movieName="movieName" 
+ http :8088/movies id="id" stock="stock" movieName="movieName" date="date" 
 ```
 - reservelist
 ```

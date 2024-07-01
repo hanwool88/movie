@@ -24,9 +24,9 @@ public class Reserve {
 
     private Integer amount;
 
-    private Date reserveDate;
-
     private Long movieId;
+
+    private String date;
 
     @PostPersist
     public void onPostPersist() {

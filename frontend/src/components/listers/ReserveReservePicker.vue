@@ -24,10 +24,10 @@
                                 Amount :  {{item.amount }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                ReserveDate :  {{item.reserveDate }}
+                                MovieId :  {{item.movieId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                MovieId :  {{item.movieId }}
+                                Date :  {{item.date }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

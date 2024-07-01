@@ -53,8 +53,8 @@
                             [ UserId :  {{data.userId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ReserveStatus :  {{data.reserveStatus }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Amount :  {{data.amount }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ ReserveDate :  {{data.reserveDate }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ MovieId :  {{data.movieId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Date :  {{data.date }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -125,8 +125,8 @@
                 'userId': '',
                 'reserveStatus': '',
                 'amount': 0,
-                'reserveDate': '2024-07-01',
                 'movieId': 0,
+                'date': '',
             }
         },
         methods: {

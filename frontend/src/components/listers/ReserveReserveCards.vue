@@ -112,8 +112,8 @@
                 'userId': '',
                 'reserveStatus': '',
                 'amount': 0,
-                'reserveDate': '2024-07-01',
                 'movieId': 0,
+                'date': '',
             }
         },
         methods:{

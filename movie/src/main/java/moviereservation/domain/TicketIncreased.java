@@ -12,10 +12,10 @@ import moviereservation.infra.AbstractEvent;
 public class TicketIncreased extends AbstractEvent {
 
     private Long id;
-    private Date date;
     private Integer stock;
     private String movieName;
     private Long reserveId;
+    private String date;
 
     public TicketIncreased(Movie aggregate) {
         super(aggregate);

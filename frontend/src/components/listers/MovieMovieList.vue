@@ -48,9 +48,9 @@
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Date :  {{data.date }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Stock :  {{data.stock }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ MovieName :  {{data.movieName }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Date :  {{data.date }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -118,9 +118,9 @@
             this.values = temp.data._embedded.movies;
             
             this.newValue = {
-                'date': '2024-07-01',
                 'stock': 0,
                 'movieName': '',
+                'date': '',
             }
         },
         methods: {

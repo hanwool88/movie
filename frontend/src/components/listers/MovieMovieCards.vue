@@ -109,9 +109,9 @@
             me.values = temp.data._embedded.movies;
             
             me.newValue = {
-                'date': '2024-07-01',
                 'stock': 0,
                 'movieName': '',
+                'date': '',
             }
         },
         methods:{
