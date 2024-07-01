@@ -58,6 +58,7 @@ public class Movie {
                 repository().save(movie);
     
                 TicketDecreased ticketDecreased = new TicketDecreased(movie);
+                ticketDecreased.setReserveId(reserved.getId());
                 ticketDecreased.publishAfterCommit();
             }
             else {
@@ -77,11 +78,12 @@ public class Movie {
         
         repository().findById(reserveCanceled.getMovieId()).ifPresent(movie->{
             
-            if(movie.date.compareTo(reserveCanceled.getReserveDate()) > 0) {
+            if(movie.date.compareTo(reserveCanceled.getReserveDate()) >= 0) {
                 movie.setStock(movie.getStock() + reserveCanceled.getAmount());
                 repository().save(movie);
     
                 TicketIncreased ticketIncreased = new TicketIncreased(movie);
+                ticketIncreased.setReserveId(reserveCanceled.getId());
                 ticketIncreased.publishAfterCommit();
             } else {
                 return;

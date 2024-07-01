@@ -49,7 +49,7 @@ public class Reserve {
         reserveCanceled.publishAfterCommit();
     }
 
-    //>>> Clean Arch / Port Method
+
 
     //<<< Clean Arch / Port Method
     public static void updateStatus(OutOfTicket outOfTicket) {
@@ -60,6 +60,22 @@ public class Reserve {
         });
     }
 
+
+    public static void updateStatus(TicketIncreased ticketIncreased) {
+        repository().findById(ticketIncreased.getReserveId()).ifPresent(reserve ->{
+            
+            reserve.setReserveStatus("reserveCanceled");
+            repository().save(reserve);
+        });
+    }
+
+    public static void updateStatus(TicketDecreased ticketDecreased) {
+        repository().findById(ticketDecreased.getReserveId()).ifPresent(reserve ->{
+            
+            reserve.setReserveStatus("reserveCompleted");
+            repository().save(reserve);
+        });
+    }
 
 }
 //>>> DDD / Aggregate Root
