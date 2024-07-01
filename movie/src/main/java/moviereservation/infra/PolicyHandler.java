@@ -22,5 +22,21 @@ public class PolicyHandler {
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
+
+    public void wheneverReserved(
+        @Payload Reserved reserved
+    ) {
+        Reserved event = reserved;
+        // Sample Logic //
+        Movie.decreaseTicket(event);
+    }
+
+    public void wheneverReserveCanceled(
+        @Payload ReserveCanceled reserveCanceled
+    ) {
+        ReserveCanceled event = reserveCanceled;
+        // Sample Logic //
+        Movie.increaseTicket(event);
+    }
 }
 //>>> Clean Arch / Inbound Adaptor
